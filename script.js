@@ -26,5 +26,5 @@ Peso: ${peso}kg
 Observações: ${observacoes}`);
 
     // Redireciona para feedback.html
-    window.location.href = "feedback.html";
+    window.location.href = "https://menezesdouglas.github.io/petshop-petacu/feedback.html";
 }
