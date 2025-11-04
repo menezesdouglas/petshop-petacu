@@ -19,100 +19,88 @@
                 </section>           
            </div>           
         </header>
-
         <main>
-            <form class="pet-form">
-                <section class="form-section">
-                    <h2>Dados do Tutor</h2>
-                    
-                    <div class="form-group">
-                        <label for="nome-tutor">Nome Completo</label>
-                        <input type="text" id="nome-tutor" name="nome-tutor" required>
-                    </div>
+        <form class="pet-form" onsubmit="cadastrarPet(); return false;">
+    <section class="form-section">
+        <h2>Dados do Tutor</h2>
 
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+        <div class="form-group">
+            <label for="nomeTutor">Nome Completo</label>
+            <input type="text" id="nomeTutor" name="nome-tutor" required>
+        </div>
 
-                    <div class="form-group">
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
-                    </div>
-                </section>
+        <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-                <section class="form-section">
-                    <h2>Dados do Pet</h2>
-                    
-                    <div class="form-group">
-                        <label for="nome-pet">Nome do Pet</label>
-                        <input type="text" id="nome-pet" name="nome-pet" required>
-                    </div>
+        <div class="form-group">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+    </section>
 
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="especie">Espécie</label>
-                            <select id="especie" name="especie">
-                                <option value="">Selecione...</option>
-                                <option value="cachorro">Cachorro</option>
-                                <option value="gato">Gato</option>
-                                <option value="passaro">Pássaro</option>
-                                <option value="coelho">Coelho</option>
-                                <option value="outro">Outro</option>
-                            </select>
-                        </div>
+    <section class="form-section">
+        <h2>Dados do Pet</h2>
 
-                        <div class="form-group">
-                            <label for="idade">Idade (anos)</label>
-                            <input type="number" id="idade" name="idade" min="0" max="30">
-                        </div>
-                    </div>
+        <div class="form-group">
+            <label for="nomePet">Nome do Pet</label>
+            <input type="text" id="nomePet" name="nome-pet" required>
+        </div>
 
-                    <div class="form-group">
-                        <label for="raca">Raça</label>
-                        <input type="text" id="raca" name="raca" placeholder="Ex: Poodle, Persa, etc.">
-                    </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label for="especie">Espécie</label>
+                <select id="especie" name="especie">
+                    <option value="">Selecione...</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="passaro">Pássaro</option>
+                    <option value="coelho">Coelho</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
 
-                    <div class="form-group">
-                        <label for="peso">Peso (kg)</label>
-                        <input type="number" id="peso" name="peso" step="0.1" min="0">
-                    </div>
-                </section>
+            <div class="form-group">
+                <label for="idade">Idade (anos)</label>
+                <input type="number" id="idade" name="idade" min="0" max="30">
+            </div>
+        </div>
 
-                <section class="form-section">
-                    <h2>Serviços Desejados</h2>
-                    
-                    <div class="form-group checkbox-group">
-                        <label>
-                            <input type="checkbox" name="servico" value="banho">
-                            Banho
-                        </label>
-                        <label>
-                            <input type="checkbox" name="servico" value="tosa">
-                            Tosa
-                        </label>
-                        <label>
-                            <input type="checkbox" name="servico" value="consulta">
-                            Consulta Veterinária
-                        </label>
-                        <label>
-                            <input type="checkbox" name="servico" value="vacinacao">
-                            Vacinação
-                        </label>
-                    </div>
+        <div class="form-group">
+            <label for="raca">Raça</label>
+            <input type="text" id="raca" name="raca" placeholder="Ex: Poodle, Persa, etc.">
+        </div>
 
-                    <div class="form-group">
-                        <label for="observacoes">Observações</label>
-                        <textarea id="observacoes" name="observacoes" rows="4" placeholder="Alguma informação adicional sobre seu pet?"></textarea>
-                    </div>
-                </section>
+        <div class="form-group">
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" name="peso" step="0.1" min="0">
+        </div>
+    </section>
 
-                <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
-                    <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
-                </div>
-            </form>
-        </main>
+    <section class="form-section">
+        <h2>Serviços Desejados</h2>
+
+        <div class="form-group checkbox-group">
+            <label><input type="checkbox" name="servico" value="banho"> Banho</label>
+            <label><input type="checkbox" name="servico" value="tosa"> Tosa</label>
+            <label><input type="checkbox" name="servico" value="consulta"> Consulta Veterinária</label>
+            <label><input type="checkbox" name="servico" value="vacinacao"> Vacinação</label>
+        </div>
+
+        <div class="form-group">
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" placeholder="Digite alguma observação"></textarea>
+
+        </div>
+    </section>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Cadastrar Pet</button>
+        <button type="reset" class="btn btn-secondary">Limpar Formulário</button>
+    </div>
+</form>
+</main>
 
         <footer>
   <p>© 2025 PetAçu - Todos os direitos reservados</p> <a href="https://github.com/menezesdouglas" target="_blank" aria-label="Link para o perfil do GitHub">
@@ -120,6 +108,7 @@
   </a>
 </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
 

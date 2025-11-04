@@ -1,0 +1,54 @@
+/* Fundo da página feedback */
+body.feedback-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F4E4D4; /* bege da página */
+    font-family: "DynaPuff", system-ui;
+    margin: 0;
+}
+
+
+/* Caixa principal */
+.container {
+    background: #C7E6C7; /* verde claro igual às seções do formulário */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+    text-align: center;
+    width: 85%;
+    max-width: 450px;
+}
+
+/* Título */
+.container h1 {
+    color: #5A3A2E; /* marrom igual ao logo PetAçu */
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-family: "DynaPuff", system-ui;
+}
+
+/* Texto */
+.container p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #5A3A2E; /* mantém o marrom */
+}
+
+/* Botão de voltar */
+.container a {
+    display: inline-block;
+    background: #7FBF9E; /* verde médio */
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Hover do botão */
+.container a:hover {
+    background: #6BAF8F; /* um tom mais escuro ao passar o mouse */
+}
