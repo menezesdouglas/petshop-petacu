@@ -1,4 +1,8 @@
 function cadastrarPet() {
+
+    // impede qualquer submit automático caso exista
+    event.preventDefault();
+
     const nomeTutor = document.getElementById("nomeTutor").value;
     const email = document.getElementById("email").value;
     const telefone = document.getElementById("telefone").value;
@@ -10,16 +14,17 @@ function cadastrarPet() {
     const peso = document.getElementById("peso").value;
     const observacoes = document.getElementById("observacoes").value;
 
-
     alert(`Novo Pet cadastrado com sucesso ! 🎉🐾
 Nome do tutor: ${nomeTutor}
 Email: ${email}
 Telefone: ${telefone}
 Nome do Pet: ${nomePet}
 Espécie: ${especie}
-Observações: ${observacoes}`
+Idade: ${idade}
+Raça: ${raca}
+Peso: ${peso}kg
+Observações: ${observacoes}`);
 
-);
-
+    // Redireciona para feedback.html
     window.location.href = "feedback.html";
 }
